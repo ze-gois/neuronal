@@ -1,6 +1,6 @@
 # Primeira publicação no PyPI
 
-O nome desejado é neuronal. Um 404 na API pública não garante disponibilidade:
+O nome desejado é neuronal-rs. Um 404 na API pública não garante disponibilidade:
 a confirmação ocorre quando o PyPI aceita o primeiro upload.
 
 ## Conta
@@ -8,7 +8,7 @@ a confirmação ocorre quando o PyPI aceita o primeiro upload.
 Use sua conta em https://pypi.org/, verifique o email e configure 2FA.
 Crie um API token para a primeira publicação com escopo da conta, pois o projeto
 ainda não existe. Não coloque tokens no repositório nem em mensagens.
-Depois, substitua-o por um token limitado a neuronal ou configure Trusted Publishing.
+Depois, substitua-o por um token limitado a neuronal-rs ou configure Trusted Publishing.
 
 ## Preparar e verificar
 
@@ -53,7 +53,7 @@ Verifique em um ambiente novo:
 
 ```bash
 python -m venv /tmp/neuronal-pypi-check
-/tmp/neuronal-pypi-check/bin/python -m pip install neuronal==0.1.0
+/tmp/neuronal-pypi-check/bin/python -m pip install neuronal-rs==0.1.0
 /tmp/neuronal-pypi-check/bin/python -c 'import neuronal; print(neuronal.__version__)'
 ```
 

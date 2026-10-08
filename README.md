@@ -1,5 +1,7 @@
 # neuronal
 
+Distribuição Python: `neuronal-rs`. Importação: `import neuronal`.
+
 Pacote Python com núcleo numérico escrito em Rust. Esqueleto inicial para
 simulação neuronal e, posteriormente, geração de registros extracelulares sintéticos.
 Ainda não implementa neurônios LIF nem spike sorting.
@@ -46,8 +48,9 @@ maturin build --release --out dist
 python -m pip install dist/*.whl
 ```
 
-O nome `neuronal` é o nome local pretendido; disponibilidade no PyPI não foi
-verificada e nenhum pacote foi publicado. Licença de distribuição: [MIT](LICENSE).
+A distribuição no PyPI se chama `neuronal-rs`; o módulo Python permanece
+`neuronal` (`import neuronal`). A aceitação do nome será confirmada no upload.
+Nenhum pacote foi publicado. Licença de distribuição: [MIT](LICENSE).
 
 ## Próxima entrega
 
