@@ -68,3 +68,10 @@ Veja [examples/README.md](examples/README.md) e o notebook
 [01_hybrid_workflow.ipynb](examples/notebooks/01_hybrid_workflow.ipynb).
 
 A preparação dos ambientes está em [scripts/README.md](scripts/README.md).
+
+## Painel NiceGUI experimental
+
+Nesta branch, NiceGUI é dependência do pacote. O painel reutilizável está em
+`neuronal.panel.TimeAxisPanel`; veja
+[02_nicegui_panel.ipynb](examples/notebooks/02_nicegui_panel.ipynb) para apresentação
+no notebook e `python examples/panel.py` para execução no navegador.
