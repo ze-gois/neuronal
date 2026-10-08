@@ -1,0 +1,8 @@
+# Research dependencies shared by both kernels.
+# Install neuronal-rs from PyPI OR use maturin develop separately.
+jupyterlab>=4,<5
+ipykernel>=6,<8
+matplotlib>=3.8,<4
+numpy>=1.26,<3
+maturin>=1.9,<2
+pytest>=8,<10

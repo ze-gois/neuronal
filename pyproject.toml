@@ -20,6 +20,7 @@ Issues = "https://github.com/ze-gois/neuronal/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
+plot = ["matplotlib>=3.8"]
 
 [tool.maturin]
 manifest-path = "crates/neuronal-python/Cargo.toml"

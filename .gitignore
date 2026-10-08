@@ -6,3 +6,7 @@ __pycache__/
 .pytest_cache/
 *.so
 *.pyd
+
+.ipynb_checkpoints/
+/examples/results/
+/examples/data/

@@ -61,3 +61,8 @@ entradas estocásticas e registros extracelulares com ground truth.
 ## Publicação
 
 Veja [o guia de publicação](docs/publishing.md) para validar e publicar no PyPI.
+
+## Pesquisa com JupyterLab
+
+Veja [examples/README.md](examples/README.md) e o notebook
+[01_hybrid_workflow.ipynb](examples/notebooks/01_hybrid_workflow.ipynb).

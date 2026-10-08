@@ -13,3 +13,15 @@ def test_native_time_axis():
 def test_invalid_step(dt_ms):
     with pytest.raises(ValueError):
         neuronal.time_axis(5, dt_ms)
+
+
+def test_sampled_span():
+    assert neuronal.sampled_span(5, 0.1) == pytest.approx(0.4)
+    assert neuronal.sampled_span(0, 0.1) == 0.0
+    assert neuronal.sampled_span(1, 0.1) == 0.0
+
+
+@pytest.mark.parametrize("dt_ms", [0, -1, math.nan, math.inf])
+def test_invalid_sampled_span(dt_ms):
+    with pytest.raises(ValueError):
+        neuronal.sampled_span(5, dt_ms)
