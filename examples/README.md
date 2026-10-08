@@ -41,3 +41,14 @@ Não instale a versão PyPI por cima do ambiente local.
 Salve notebooks versionados sem outputs (Edit → Clear Outputs of All Cells).
 Para registrar um experimento, anote parâmetros, versão/commit, ambiente,
 hipótese e conclusão. requirements.txt usa intervalos de versões; não é lockfile.
+
+## Preparação por scripts
+
+Os comandos acima também estão automatizados em [scripts/README.md](../scripts/README.md):
+
+```bash
+bash scripts/jupyter.sh local setup
+bash scripts/jupyter.sh local lab
+```
+
+Para usar a versão publicada, substitua `local` por `pypi`.

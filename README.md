@@ -66,3 +66,5 @@ Veja [o guia de publicação](docs/publishing.md) para validar e publicar no PyP
 
 Veja [examples/README.md](examples/README.md) e o notebook
 [01_hybrid_workflow.ipynb](examples/notebooks/01_hybrid_workflow.ipynb).
+
+A preparação dos ambientes está em [scripts/README.md](scripts/README.md).
