@@ -1,6 +1,7 @@
 /target/
 /.venv/
 /dist/
+/dist-*/
 __pycache__/
 .pytest_cache/
 *.so
