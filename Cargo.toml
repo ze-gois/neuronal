@@ -1,0 +1,11 @@
+[workspace]
+members = ["crates/neuronal-core", "crates/neuronal-python"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+neuronal-core = { path = "crates/neuronal-core" }
+pyo3 = { version = "0.27", features = ["abi3-py310"] }

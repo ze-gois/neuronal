@@ -1,0 +1,22 @@
+[build-system]
+requires = ["maturin>=1.9,<2"]
+build-backend = "maturin"
+
+[project]
+name = "neuronal"
+version = "0.1.0"
+description = "Neural simulation in Rust, accessible from Python"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.maturin]
+manifest-path = "crates/neuronal-python/Cargo.toml"
+python-source = "python"
+module-name = "neuronal._native"
+features = ["pyo3/extension-module"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
