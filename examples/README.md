@@ -52,3 +52,33 @@ bash scripts/jupyter.sh local lab
 ```
 
 Para usar a versão publicada, substitua `local` por `pypi`.
+
+## Painel NiceGUI (branch de desenvolvimento)
+
+NiceGUI é uma dependência do pacote nesta branch. Prepare o ambiente local
+com `bash scripts/jupyter.sh local setup`, inicie com
+`bash scripts/jupyter.sh local lab` e abra `notebooks/02_nicegui_panel.ipynb`.
+O pacote publicado 0.1.0 não contém esse painel.
+
+`neuronal.panel.TimeAxisPanel` fornece controles, gráfico e estado compartilhado.
+Use `await panel.show()` para embutir a interface na célula, `panel.parameters`
+e `panel.result` para ler o experimento, e `panel.close()` para desativá-lo.
+Cada instância tem uma URL própria; todos os clientes dessa instância compartilham
+o mesmo estado. Feche a instância anterior antes de executar novamente a célula.
+
+O servidor usa a event loop do kernel, sem threads nem `nest_asyncio`, e escuta
+apenas em loopback numa porta livre. `await shutdown_panels()` encerra o servidor;
+reinicie o kernel para iniciar uma nova sessão depois disso. Fechar o output ou
+a aba do navegador não encerra o servidor. Jupyter remoto e HTTPS exigem uma
+integração de proxy que este protótipo ainda não implementa.
+
+Outra forma de execução: `python examples/panel.py`, no mesmo ambiente local.
+
+### Validação desta implementação
+
+Controles, callbacks, rejeição de parâmetros inválidos, fechamento e substituição
+são cobertos por `tests/test_panel.py`, usando o simulador ASGI do NiceGUI.
+O ambiente de implementação não disponibilizou Rust e bloqueou sockets: o teste
+foi executado com a extensão Rust publicada 0.1.0 e o novo módulo Python.
+O formato do notebook foi validado, mas a execução completa do iframe no
+JupyterLab e do servidor Uvicorn ainda exige teste local nesta branch.

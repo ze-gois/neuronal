@@ -13,6 +13,7 @@ authors = [{ name = "José Henrique Targino Dias Gois" }]
 keywords = ["neuroscience", "simulation", "rust"]
 classifiers = ["Development Status :: 2 - Pre-Alpha", "Programming Language :: Python :: 3", "Programming Language :: Rust", "Topic :: Scientific/Engineering"]
 requires-python = ">=3.10"
+dependencies = ["nicegui>=3.18,<4"]
 
 [project.urls]
 Repository = "https://github.com/ze-gois/neuronal"
