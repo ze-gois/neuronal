@@ -34,8 +34,7 @@ python -m venv /tmp/neuronal-wheel-check
 ```
 
 Confira que o sdist inclui Cargo.toml da raiz, ambos os crates, arquivos Python
-e README. A licença permanece a escolher pelo autor: se for aberta, inclua seu
-texto e os metadados antes de publicar.
+e README. O projeto usa licença MIT; confira a inclusão de LICENSE nos artefatos.
 
 ## Publicar
 

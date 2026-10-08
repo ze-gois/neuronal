@@ -47,7 +47,7 @@ python -m pip install dist/*.whl
 ```
 
 O nome `neuronal` é o nome local pretendido; disponibilidade no PyPI não foi
-verificada e nenhum pacote foi publicado. Licença de distribuição ainda a definir.
+verificada e nenhum pacote foi publicado. Licença de distribuição: [MIT](LICENSE).
 
 ## Próxima entrega
 
