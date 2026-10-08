@@ -7,7 +7,14 @@ name = "neuronal"
 version = "0.1.0"
 description = "Neural simulation in Rust, accessible from Python"
 readme = "README.md"
+authors = [{ name = "José Góis" }]
+keywords = ["neuroscience", "simulation", "rust"]
+classifiers = ["Development Status :: 2 - Pre-Alpha", "Programming Language :: Python :: 3", "Programming Language :: Rust", "Topic :: Scientific/Engineering"]
 requires-python = ">=3.10"
+
+[project.urls]
+Repository = "https://github.com/ze-gois/neuronal"
+Issues = "https://github.com/ze-gois/neuronal/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]

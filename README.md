@@ -54,3 +54,7 @@ verificada e nenhum pacote foi publicado. Licença de distribuição ainda a def
 Implementar LIF determinístico no núcleo, validar contra solução analítica e
 expor potencial de membrana e tempos de disparo ao Python. Depois: populações,
 entradas estocásticas e registros extracelulares com ground truth.
+
+## Publicação
+
+Veja [o guia de publicação](docs/publishing.md) para validar e publicar no PyPI.
